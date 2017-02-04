@@ -16,7 +16,7 @@ Vagrant.configure('2') do |config|
   config.vm.define "server" do |host|
     host.vm.hostname = "server"
     host.vm.box = "ubuntu/trusty64"
-    host.vm.network :private_network, ip: "192.168.10.11"
+    host.vm.network :private_network, ip: "192.168.10.11", mac: "080027333c72"
 
     host.vm.provider :virtualbox do |v|
       v.name = "server"
