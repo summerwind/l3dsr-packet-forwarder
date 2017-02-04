@@ -19,7 +19,6 @@ make
 install -m 644 kmod-xt/xt_DADDR.ko /lib/modules/`uname --kernel-release`/kernel/net/netfilter/
 install -m 644 extensions-1.4/libxt_DADDR.so /lib/xtables
 
-iptables -L
 insmod /lib/modules/`uname --kernel-release`/kernel/net/netfilter/xt_DADDR.ko
 
 iptables -t mangle -A PREROUTING -m dscp --dscp 7 -j DADDR --set-daddr=192.168.10.10
