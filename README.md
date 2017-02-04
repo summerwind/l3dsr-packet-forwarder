@@ -6,6 +6,7 @@ L3DSR Packet Forwarder is an experimental XDP program that forwards packets to a
 
 - XDP supported network driver
 - BCC (https://github.com/iovisor/bcc)
+- Python 2.7
 
 ## Usage
 
